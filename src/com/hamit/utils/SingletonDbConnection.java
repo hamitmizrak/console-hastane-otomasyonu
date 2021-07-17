@@ -12,7 +12,7 @@ public class SingletonDbConnection {
 	// for mysql
 	private String user = "root";
 	private String password = "root";
-	private String url = "jdbc:mysql://localhost:3306/hastane_otomasyonu??useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false";
+	private String url = "jdbc:mysql://localhost:3306/hastane_otomasyonu?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false";
 	private Connection connection = null;
 
 	// singleton Design pattern
