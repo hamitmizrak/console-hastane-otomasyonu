@@ -11,7 +11,7 @@ public interface IDaoImpl<T> {
 
 	public void getUpdate(T t);
 
-	public void getDelete(int id);
+	public void getDelete(T t);
 
 	public ArrayList<T> list();
 
