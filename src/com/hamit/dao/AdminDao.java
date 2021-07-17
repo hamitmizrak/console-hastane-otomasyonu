@@ -59,11 +59,11 @@ public class AdminDao implements IDaoImpl<AdminDto> {
 
 	// delete from admin9 where admin_id=3;
 	@Override
-	public void getDelete(int id) {
+	public void getDelete(AdminDto adminDto) {
 		try (Connection connection = getDbConnection()) {
 			String sql = "delete from admin9 where admin_id=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setInt(1, id);
+			preparedStatement.setInt(1, adminDto.getAdminId());
 			int rows = preparedStatement.executeUpdate();
 			if (rows > 0) {
 				log.info(AdminDto.class + " silme başarılı");
