@@ -1,5 +1,5 @@
 # Java JDBC CRUD  Console Project
-## Java SE
+## Java SE 17 temmuz 2021
 
 - ✨Teknolojiler
 - Java SE
